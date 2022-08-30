@@ -123,3 +123,8 @@
   bottom: -5%;
   transform: translateX(-50%);
 }
+
+.clue {
+  left: 50%;
+  transform: translateX(-50%);
+}

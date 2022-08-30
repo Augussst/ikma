@@ -514,6 +514,9 @@ video {
 .relative {
   position: relative;
 }
+.bottom-3 {
+  bottom: 0.75rem;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -522,6 +525,9 @@ video {
 }
 .-bottom-5 {
   bottom: -1.25rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -560,13 +566,13 @@ video {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -712,9 +718,19 @@ video {
   transform: translateX(-50%);
 }
 
+.clue {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 1024px) {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
