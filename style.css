@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-one: #eb1d36;
+  --color-two: #fa9494;
+  --color-three: #eb1d36;
+  --color-four: #fa9494;
+  --color-five: #ffcb42;
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+.contain {
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px !important;
+
+  section {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    color: white;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: bold;
+    }
+  }
+
+  .one {
+    background-color: var(--color-one);
+  }
+
+  .two {
+    background-color: var(--color-two);
+  }
+
+  .three {
+    background-color: var(--color-three);
+  }
+
+  .four {
+    background-color: var(--color-four);
+  }
+
+  .five {
+    background-color: var(--color-five);
+  }
+}
+
+.map {
+  width: 80%;
+  height: 80%;
+
+  .overlay {
+    height: 10%;
+    width: 110%;
+    background-color: var(--color-five);
+  }
+
+  .overlay-b {
+    height: 5%;
+    background-color: var(--color-five);
+  }
+}
+
+.img {
+  * {
+    transition: all 500ms;
+  }
+  .b {
+    stroke-width: 3.4003px;
+  }
+  .b,
+  .c,
+  .d {
+    fill: black;
+    stroke: black;
+    stroke-miterlimit: 10;
+  }
+  .c {
+    stroke-width: 9px;
+  }
+  .d {
+    stroke-width: 3px;
+  }
+
+  &:hover {
+    .b {
+      stroke-width: 3.4003px;
+    }
+    .b,
+    .c,
+    .d {
+      fill: none;
+      stroke: white;
+      stroke-miterlimit: 10;
+    }
+    .c {
+      stroke-width: 9px;
+    }
+    .d {
+      stroke-width: 3px;
+    }
+  }
+}
+
+.btn {
+  background-color: white;
+  padding: 3px 12px;
+  border: 1px solid black;
+  border-radius: 100px;
+  color: black;
+}
+
+.emoji {
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
+}
