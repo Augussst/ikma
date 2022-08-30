@@ -64,7 +64,7 @@
 
   .overlay {
     height: 10%;
-    width: 110%;
+    width: 100%;
     background-color: var(--color-five);
   }
 
